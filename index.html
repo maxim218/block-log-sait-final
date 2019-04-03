@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Block Log</title>
+    <style>
+        body {
+            padding: 0px;
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+            font-size: 2vw;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            background-color: #f1f5fb;
+        }
+
+        h1 {
+            display: inline;
+        }
+
+        h2 {
+            display: inline;
+        }
+
+        u {
+            color: rgb(78, 42, 209);
+        }
+
+        u:hover {
+            cursor: pointer;
+            color: rgb(137, 130, 204);
+        }
+
+        #myBox {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: table;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+
+        #contentBox {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px;
+        }
+
+        #paperBox {
+            background: white;
+        }
+    </style>
+<body>
+
+<div align = "center" id = "myBox">
+    <div id = "contentBox">
+        <div id = "paperBox">
+            <br>
+            <h1>Block Log</h1>
+            <br>
+            <br>
+            <u onclick = "www();"><h2>Download for Windows</h2></u>
+            <br>
+            <br>
+            <u onclick = "mmm();"><h2>Download for Mac</h2></u>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+
+<script>
+    function www() {
+        window.location = "/api/BlockLogWindows";
+    }
+
+    function mmm() {
+        window.location = "/api/BlockLogMac";
+    }
+</script>
+
+</body>
+</html>
